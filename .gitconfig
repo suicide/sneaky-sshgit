@@ -1,0 +1,14 @@
+[http]
+	proxy = socks5h://10.64.0.1:1080
+[https]
+	proxy = socks5h://10.64.0.1:1080
+
+# skip signing if you don't care
+[commit]
+	gpgsign = true
+[user]
+	name = myUsername
+	email = my@mail.com
+
+  # skip signing if you don't care
+	signingkey = AAAAAAAAAAAAAAAA

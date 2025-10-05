@@ -1,0 +1,10 @@
+## use local gpg to sign git commits, skip if you don't care
+export GNUPGHOME="$(pwd)/.gnupg"
+
+## git config
+export GIT_CONFIG_GLOBAL="$(pwd)/.gitconfig"
+
+## SSH connection
+# export GIT_SSH_COMMAND="ssh -F $(pwd)/.ssh/config"
+# pass idenity file via relative path
+export GIT_SSH_COMMAND="ssh -i $(pwd)/.ssh/id_rsa -F $(pwd)/.ssh/config"
